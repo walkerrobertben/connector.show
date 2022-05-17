@@ -26,7 +26,6 @@ const elem_imageFront = document.getElementById("connector_image_front");
 const elem_dimWidth = document.getElementById("connector_dimension_width");
 const elem_dimHeight = document.getElementById("connector_dimension_height");
 
-
 //Render loaded information
 elem_pageTitle.innerHTML = data_name;
 elem_connName.innerHTML = data_name;
