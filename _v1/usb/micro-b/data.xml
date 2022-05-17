@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector>
+    <name>USB Micro-B</name>
+    <dimensions>
+        <width>10</width>
+        <height>6</height>
+        <units>mm</units>
+    </dimensions>
+</connector>

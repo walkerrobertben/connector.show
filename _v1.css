@@ -1,0 +1,145 @@
+:root {
+    --font-scale: 0.5;
+    
+    --front-image-width: 55vw;
+    --front-image-width-max: 75rem;
+
+    --dimension-font-size: 4rem;
+    --arrow-scale: 0.5rem;
+
+    --color-foreground-0: rgb(45, 45, 45);
+}
+@media screen and (max-width: 700px) {
+    :root {
+        --font-scale: 0.35;
+    }
+}
+@media screen and (max-width: 350px) {
+    :root {
+        --font-scale: 0.15;
+    }
+}
+
+html {
+    color: var(--color-foreground-0);
+    font-size: calc(100% * var(--font-scale));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.content-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    display: block;
+    text-align: center;
+
+    font-size: 7.5rem;
+    margin-bottom: 5rem;
+}
+h2 {
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.image-with-dimensions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10rem;
+}
+.image-with-dimensions .image-holder {
+    display: flex;
+}
+.image-with-dimensions .image-holder img {
+    display: block;
+    width: var(--front-image-width);
+    max-width: var(--front-image-width-max);
+}
+.dimension-width {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 1rem;
+    margin-top: -6rem;
+}
+.dimension-height {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 5rem;
+    margin-left: 1rem;
+    margin-right: -6rem;
+}
+
+.arrow {
+
+    width: var(--arrow-scale);
+    height: var(--arrow-scale);
+
+    border: solid;
+    border-width: 0 var(--arrow-scale) var(--arrow-scale) 0;
+    padding: var(--arrow-scale);
+
+    transform-origin: center;
+}
+.arrow.right {
+    transform: translateX(calc(-0.75 * var(--arrow-scale))) rotate(-45deg);
+}
+.arrow.left {
+    transform: translateX(calc(0.75 * var(--arrow-scale))) rotate(135deg);
+}
+.arrow.up {
+    transform: translateY(calc(0.75 * var(--arrow-scale))) rotate(-135deg);
+}
+.arrow.down {
+    transform: translateY(calc(-0.75 * var(--arrow-scale))) rotate(45deg);
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: var(--color-foreground-0);
+}
+.line.horizontal {
+    align-items: flex-end;
+    height: var(--arrow-scale);
+}
+.line.vertical {
+    flex-direction: column;
+    width: var(--arrow-scale);
+}
+.line p {
+    margin: 0;
+    width: fit-content;
+    height: var(--dimension-font-size);
+    font-size: var(--dimension-font-size);
+    white-space: nowrap;
+}
+.line.horizontal p  {
+    margin-bottom: calc(2 * var(--arrow-scale));
+}
+.line.vertical p  {
+    margin-left: calc(2 * var(--arrow-scale));
+}
