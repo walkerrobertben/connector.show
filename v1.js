@@ -1,7 +1,7 @@
 //Parse get-parameters
 const queryString = window.location.search;
 const queryParams = new URLSearchParams(queryString);
-const connector = queryParams.get("connector");
+const connector = queryParams.get("show");
 const directory = "v1/" + connector;
 
 //Perform HTTP request to load data xml
