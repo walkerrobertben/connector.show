@@ -117,8 +117,6 @@ h2 {
     border: solid;
     border-width: 0 var(--arrow-scale) var(--arrow-scale) 0;
     padding: var(--arrow-scale);
-
-    transform-origin: center;
 }
 .arrow.right {
     transform: translateX(calc(-0.75 * var(--arrow-scale))) rotate(-45deg);
