@@ -81,9 +81,11 @@ h2 {
 }
 .image-with-dimensions .image-holder {
     display: flex;
+    align-items: center;
 }
 .image-with-dimensions .image-holder img {
     display: block;
+
     width: var(--front-image-width);
     max-width: var(--front-image-width-max);
 }
@@ -92,18 +94,19 @@ h2 {
     align-items: center;
 
     width: 100%;
-    height: 5rem;
-    margin-bottom: 1rem;
-    margin-top: -6rem;
+    height: 0;
+    margin-bottom: 3.5rem;
+    margin-top: -3.5rem;
 }
 .dimension-height {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 5rem;
-    margin-left: 1rem;
-    margin-right: -6rem;
+    width: 0;
+    height: 100%;
+    margin-left: 3.5rem;
+    margin-right: -3.5rem;
 }
 
 .arrow {
