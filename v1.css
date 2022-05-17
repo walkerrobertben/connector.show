@@ -86,10 +86,8 @@ h2 {
 .image-with-dimensions .image-holder img {
     display: block;
 
-    /*width: var(--front-image-width);
-    max-width: var(--front-image-width-max);*/
-    width: 30rem;
-    height: 30rem;
+    width: var(--front-image-width);
+    max-width: var(--front-image-width-max);
 }
 
 .image-with-dimensions .image-holder .fake-image {
