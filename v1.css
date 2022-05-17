@@ -1,7 +1,7 @@
 :root {
     --font-scale: 0.5;
     
-    --front-image-width: 55vw;
+    --front-image-width: 50vw;
     --front-image-width-max: 75rem;
 
     --dimension-font-size: 4rem;
@@ -9,14 +9,14 @@
 
     --color-foreground-0: rgb(45, 45, 45);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
     :root {
         --font-scale: 0.3;
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     :root {
-        --font-scale: 0.15;
+        --font-scale: 0.175;
     }
 }
 
