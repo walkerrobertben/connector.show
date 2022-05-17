@@ -9,16 +9,31 @@
 
     --color-foreground-0: rgb(45, 45, 45);
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
+    :root {
+        --font-scale: 0.35;
+    }
+}
+@media screen and (max-width: 450px) {
     :root {
         --font-scale: 0.3;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
+    :root {
+        --font-scale: 0.25;
+    }
+}
+@media screen and (max-width: 300px) {
     :root {
         --font-scale: 0.175;
     }
 }
+/*@media screen and (max-width: 400px) {
+    :root {
+        --font-scale: 0.175;
+    }
+}*/
 
 html {
     color: var(--color-foreground-0);
