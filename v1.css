@@ -32,11 +32,14 @@ body {
 }
 
 .content-container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+html, body, .content-container {
+    height: 100%;
 }
 
 h1 {
