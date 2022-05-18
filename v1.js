@@ -13,6 +13,7 @@ loadDataRequest.send();
 //Parse data XML
 const data = new DOMParser().parseFromString(loadDataRequest.responseText, "text/xml");
 const data_name = data.getElementsByTagName("name")[0].innerHTML;
+const data_aspect = data.getElementsByTagName("image-ar")[0].innerHTML;
 const data_dimensions = data.getElementsByTagName("dimensions")[0];
 
 const data_width = data_dimensions.getElementsByTagName("width")[0].innerHTML;
@@ -32,6 +33,9 @@ elem_connName.innerHTML = data_name;
 elem_imageFront.src = directory + "/front_optimised.svg";
 elem_dimWidth.innerHTML = data_width + data_dimUnit;
 elem_dimHeight.innerHTML = data_height + data_dimUnit;
+
+//Set CSS varaibles
+document.documentElement.style.setProperty("--front-image-ar", data_aspect);
 
 //Show back button if needed
 if (queryParams.get("back") == "true") {

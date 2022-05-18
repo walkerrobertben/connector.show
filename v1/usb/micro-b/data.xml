@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <connector>
     <name>USB Micro-B</name>
+    <image-ar>0.7183333333333333</image-ar>
     <dimensions>
         <width>10</width>
         <height>6</height>
