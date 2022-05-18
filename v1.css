@@ -90,31 +90,31 @@ h2 {
     max-width: var(--front-image-width-max);
 }
 
-.image-with-dimensions .image-holder svg {
+/*.image-with-dimensions .image-holder svg {
     display: block;
 
     width: 50rem;
     height: 20rem;
-}
+}*/
 
 .dimension-width {
     display: flex;
     align-items: center;
 
     width: auto;
-    height: 0;
+    height: 1rem;
     margin-bottom: 3.5rem;
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
 }
 .dimension-height {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 0;
+    width: 1rem;
     height: auto;
     margin-left: 3.5rem;
-    margin-right: -3.5rem;
+    margin-right: -4.5rem;
 }
 
 .arrow {
