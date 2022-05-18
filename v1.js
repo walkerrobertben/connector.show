@@ -22,14 +22,14 @@ const data_dimUnit = data_dimensions.getElementsByTagName("units")[0].innerHTML;
 //Find page elements
 const elem_pageTitle = document.getElementsByTagName("title")[0];
 const elem_connName = document.getElementById("connector_name");
-const elem_imageFront = document.getElementById("connector_image_front");
+//const elem_imageFront = document.getElementById("connector_image_front");
 const elem_dimWidth = document.getElementById("connector_dimension_width");
 const elem_dimHeight = document.getElementById("connector_dimension_height");
 
 //Render loaded information
 elem_pageTitle.innerHTML = data_name;
 elem_connName.innerHTML = data_name;
-elem_imageFront.src = directory + "/front_optimised.svg";
+//elem_imageFront.src = directory + "/front.png";
 elem_dimWidth.innerHTML = data_width + data_dimUnit;
 elem_dimHeight.innerHTML = data_height + data_dimUnit;
 

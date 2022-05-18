@@ -90,6 +90,13 @@ h2 {
     max-width: var(--front-image-width-max);
 }
 
+.image-with-dimensions .image-holder svg {
+    display: block;
+
+    width: 50rem;
+    height: 20rem;
+}
+
 .dimension-width {
     display: flex;
     align-items: center;
