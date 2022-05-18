@@ -29,7 +29,7 @@ const elem_dimHeight = document.getElementById("connector_dimension_height");
 //Render loaded information
 elem_pageTitle.innerHTML = data_name;
 elem_connName.innerHTML = data_name;
-elem_imageFront.src = directory + "/front.png";
+elem_imageFront.src = directory + "/front_optimised.svg";
 elem_dimWidth.innerHTML = data_width + data_dimUnit;
 elem_dimHeight.innerHTML = data_height + data_dimUnit;
 
